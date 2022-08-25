@@ -179,14 +179,14 @@ nav{
     margin-top: 75px;
 }
 .web-design-img-row img{
-    width:100%;
-    height:100%;
+    /* width:100%;
+    height:100%; */
     object-fit: cover;
-    object-position: top;
+    /* object-position: top; */
 }
 .web-design-img-row{
-    width: 34rem;
-    height: 600px;
+    max-width: 34rem;
+    max-height: 600px;
     overflow: hidden
 }
 .content-btn h1, .teams-content .heading h1{
@@ -194,7 +194,7 @@ nav{
     font-family: "Raleway";
 }
 .content-btn p, .teams-content .heading p{
-    margin-top:20px;
+    /* margin-top:20px; */
     font-family: "Raleway";
     color:#636c79;
     font-size: 1rem;
