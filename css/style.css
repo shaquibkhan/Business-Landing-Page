@@ -129,8 +129,21 @@ nav{
     margin-left: 10px;
 }
 }
-@media (min-width:300px) {
-    
+@media (min-width: 769px){
+    .teams-content{
+        margin-top: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (max-width:768px) {
+    .teams-content{
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 .connect-business{
@@ -230,10 +243,6 @@ nav{
     position: relative;
     top:175px;
 }
-.teams-row{
-    padding-top: 60px;
-    padding-bottom: 200px;
-}
 .ceo-sec{
     margin-top:30px;
 }
@@ -244,11 +253,7 @@ nav{
     margin-top: 12px;
     color: #636c79;
 }
-.teams-content{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 .teams-img-row{
     display: flex;
     justify-content: space-between;
@@ -259,9 +264,9 @@ nav{
     /* margin-bottom: 100px; */
 }
 .teams-img-row img{
-    width:90%;
-    height:100%;
-    object-position: top;
+    max-width:90%;
+    max-height:100%;
+    /* object-position: top; */
 }
 footer{
    background-color: #10181d;
