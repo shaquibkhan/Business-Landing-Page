@@ -130,10 +130,7 @@ nav{
 }
 }
 @media (min-width:300px) {
-    .empowering{
-        display: flex;
-        justify-content: center;
-    }
+    
 }
 
 .connect-business{
