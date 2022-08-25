@@ -20,9 +20,6 @@ body{
     margin: 0 auto;
     max-width: 76rem;
 }
-header{
-    
-}
 nav{
     display: flex;
     justify-content: space-around;
@@ -57,55 +54,88 @@ nav{
     border: 1px solid #fff;
     padding:10px 20px 10px 20px;
 }
-.empowering-business{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    top:50px;
-    align-items: center;
-
-}
 .landing-img > img{
-    width:500px;
-    height: 550px;
+    width:400px;
+    height: 450px;
     border-radius: 10px;
 }
 .content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
     top:50px;
 }
-.content > h1{
-    font-size: 4.2rem;
-    color: #fff;
-}
-.content > p{
-    font-size: 1.4rem;
-    color: #cccccc;
-    line-height: 1.9rem;
-}
-.content > input{
+.wrapper > input{
     font-size: 1rem;
     padding: 25px 350px 25px 35px;
 }
 .fa-envelope{
-    position: relative;
-    top:44px;
+    position: absolute;
+    top:28px;
     left:12px;
 }
-.content > button{
+.wrapper{
+    position: relative;
+}
+.wrapper > button{
     color:#fff;
     background-color: #8bb7a2;
-    padding: 20px 30px 20px 30px;
+    padding: 10px 20px 10px 20px;
     border: none;
-    position: relative;
-    top: -65px;
-    left: 450px;
+    position: absolute;
+    top: 10px;
+    right: 22px;
     font-size: 1rem;
     cursor: pointer;
+    width: 20%;
 }
+/* All Media Query goes here */
+
+@media (min-width: 768px) and (max-width: 1030px){
+    .landing-img > img{
+        width:500px;
+        height: 400px;
+    }
+} 
+@media(max-width:768px){
+    .medium-devices-header{
+        display: none;
+    }
+}
+@media(min-width:320px) and (max-width:800px){
+    .wrapper > button{
+        padding: 5px 10px 5px 10px;
+        right:42px;
+    }
+    .wrapper > input{
+        display: flex;
+        align-items: center;
+        max-width:250px;
+    }
+}
+@media(min-width:767px) and (max-width:1031px){
+.empowering{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content{
+    margin-top: 12px;
+    text-align: center;
+}
+.landing-img > img{
+    width:600px;
+    height: 450px;
+    border-radius: 10px;
+}
+.list-item{
+    margin-left: 10px;
+}
+}
+@media (min-width:300px) {
+    .empowering{
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .connect-business{
     margin-top: 150px;
     background-color: #ffffff;
